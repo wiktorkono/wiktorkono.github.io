@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <title>Hansquare > Blog</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="#top">
+        <left>
+            <img src="media/banner.png" onclick="window.location.href = 'index.html'">
+        </left>
+        <right>
+            <button onclick="window.location.href = 'blog.html'">blog</button>
+            <button onclick="window.location.href = 'contact.html'">contact</button>
+            <img src="media/hamburger.png" onclick="doAnimation()">
+        </right>
+    </header>
+    <touch-menu>
+        <button onclick="window.location.href = 'blog.html'">blog</button>
+        <button onclick="window.location.href = 'contact.html'">contact</button>
+    </touch-menu>
+
+    <main>
+        <div class="title-container">
+            <h1>Contact me.</h1>
+        </div>
+    
+        <div class="container article-container">
+            <h3>If you wish to reach me, here you can find several ways to do so. Feel free to drop me any message you want.</h3>
+            <h1>
+                <links>
+                    <div class="link" onclick="window.location.href = 'https://www.instagram.com/wiktor.kono/'"><img src="media/allmylinks/instagram.png"></div>
+                    <div class="link" onclick="window.location.href = 'https://github.com/wiktorkonopka'"><img src="media/allmylinks/github.png"></div>
+                    <div class="link" onclick="window.location.href = 'https://discord.gg/dn93Zwd2VB'"><img src="media/allmylinks/discord.png"></div>
+                    <div class="link" onclick="window.location.href = 'https://open.spotify.com/user/3143dycj5nd2gi7jdrlsz4x572si?si=4d533794ca684374'"><img src="media/allmylinks/spotify.png"></div>
+                    <div class="link" onclick="window.location.href = 'https://www.youtube.com/@hans_quare'"><img src="media/allmylinks/youtube.png"></div>
+                    <!--<div class="link" onclick="window.location.href = ''"><img src="media/allmylinks/pcspecs.png"></div>-->
+                </links>
+            </h1>
+            <h3>You can also <a href="mailto://hansquare@waifu.club">write me an email</a>.</h3>
+        </div>
+    </main>
+
+    <footer onclick="window.location.href = '#top'">
+        <h3>copyright Hansquare, 2023-2024.</h3>
+        <p>back to top?</p>
+    </footer>
+
+</body>
+</html>

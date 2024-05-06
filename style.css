@@ -87,10 +87,14 @@ right > img {
 
 footer {
     width: calc(100% - 40px);
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     padding: 10px 20px;
-    cursor: pointer;
+    cursor: default;
+    margin-top: auto;
+}
+.show-footer {
+    display: flex;
 }
 footer > h3, footer > p {
     font-size: 16px;
@@ -257,6 +261,31 @@ short > h1 {
     font-size: 72px;
     margin: 10px 0;
 }
+simple-banner {
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+simple-banner > darker {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+simple-banner > darker > h1 {
+    width: 800px;
+    font-size: 64px;
+    margin: 30px 0 15px 0;
+}
+simple-banner > darker > h2 {
+    width: 800px;
+    font-size: 32px;
+    margin: 15px 0 30px 0;
+}
 .project {
     border-bottom: var(--3) 5px solid;
     position: relative;
@@ -337,10 +366,22 @@ links {
     margin: 15px 0;
     font-size: 16px;
 }
+.post-index {
+    margin-left: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.post-index > h1 {
+    margin: 15px 15px 15px 0;
+}
 @media (max-width: 800px) {
     .post {
         width: calc(100% - 30px);
         margin: 0 15px;
+    }
+    .post-index > h1 {
+        margin: 15px 0;
     }
 }
 
@@ -349,6 +390,14 @@ links {
 
 .article-title > h1 {
     font-size: 36px;
+    position: relative;
+    left: 0;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.article-title > h1:hover {
+    font-size: 36px;
+    left: -10px;
 }
 .article-container > p {
     line-height: 24px;
@@ -374,6 +423,9 @@ img-box {
     top: 0;
     transition: all 0.15s;
 }
+.written-on {
+    color: var(--5);
+}
 .article-container > img-box > img:hover {
     top: -5px;
 }
@@ -390,4 +442,36 @@ img-box {
         margin-right: 30px;
         margin-left: 30px;
     }
+}
+button-area {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+button-area > button {
+    position: relative;
+    top: 0px;
+    border: 3px solid var(--2);
+    background-color: var(--2);
+    color: var(--1);
+    padding: 15px 30px;
+    border-radius: 5px;
+    height: 60px;
+    min-width: 100px;
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.15s;
+    border: var(--2) 5px solid;
+}
+button-area > button:hover {
+    top: -5px;
+    border-bottom: var(--3) 5px solid;
+}
+button-area > button:active {
+    top: 0px;
 }
