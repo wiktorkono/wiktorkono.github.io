@@ -437,6 +437,10 @@ img-box {
         width: calc(100% - 30px);
         margin: 0 15px;
     }
+    img-box > img {
+        width: 100%;
+        height: auto;
+    }
     .article-container > h2, .article-container > h3, .article-container > p {
         width: calc(100% - 60px);
         margin-right: 30px;
