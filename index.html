@@ -17,12 +17,16 @@
             <img src="media/banner.png">
         </left>
         <right>
+            <!-- COMMENT IF EMPTY -->
+            <p><b><span class="span">Important: I have lost access to my Discord account, please use other contact options if willing to reach me.</span></b></p>
             <button onclick="window.location.href = 'blog.html'">blog</button>
             <button onclick="window.location.href = 'contact.html'">contact</button>
             <img src="media/hamburger.png" onclick="doAnimation()">
         </right>
     </header>
     <touch-menu>
+        <!-- COMMENT IF EMPTY -->
+        <p><b><span>Important: I have lost access to my Discord account, please use other contact options if willing to reach me.</span></b></p>
         <button onclick="window.location.href = 'blog.html'">blog</button>
         <button onclick="window.location.href = 'contact.html'">contact</button>
     </touch-menu>
@@ -88,4 +92,35 @@
     </footer>
 
 </body>
+<style>
+    /* COMMENT IF THERE IS NO ANNOUNCEMENT */
+    span {
+        color: rgb(240, 60, 60);
+        margin-right: 20px;
+    }
+    @media (max-width: 800px) {
+        .span {
+            display: none;
+        }
+    }
+    @keyframes showMenu {
+        0% { top: -250px; }
+        100% { top: 95px; }
+    }
+    @keyframes hideMenu {
+        0% { top: 95px; }
+        100% { top: -250px; }
+    }
+
+    .show-menu {
+        top: 95px;
+    }
+    .hide-menu {
+        top: -250px;
+    }
+
+    touch-menu {
+        top: -250px;
+    }
+</style>
 </html>
