@@ -8,3 +8,8 @@ function doAnimation() {
     menu.classList.toggle('show-menu');
     menu.classList.toggle('hide-menu');
 }
+
+function copyText(text) {
+    navigator.clipboard.writeText(text);
+    alert("Copied to clipboard!");
+  } 
