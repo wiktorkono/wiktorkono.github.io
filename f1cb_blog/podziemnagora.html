@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <title>Hansquare > F1CB > Kaktus Podziemna Góra Grand Prix</title>
+    <script src="../script.js"></script>
+</head>
+<body>
+    <header id="#top">
+        <left>
+            <img src="../media/banner.png" onclick="window.location.href = '../index.html'">
+        </left>
+        <right>
+            <button onclick="window.location.href = '../blog.html'">blog</button>
+            <button onclick="window.location.href = '../f1cb.html'">formula citiesbuild</button>
+            <button onclick="window.location.href = '../contact.html'">contact</button>
+            <img src="../media/hamburger.png" onclick="doAnimation()">
+        </right>
+    </header>
+    <touch-menu>
+        <button onclick="window.location.href = '../blog.html'">blog</button>
+        <button onclick="window.location.href = '../f1cb.html'">formula citiesbuild</button>
+        <button onclick="window.location.href = '../contact.html'">contact</button>
+    </touch-menu>
+
+    <main>
+    <div class="title-container article-title">
+        <h1 onclick="window.location.href = '../f1cb.html'">Kaktus Podziemna Góra Grand Prix</h1>
+    </div>
+    
+    <banner>
+        <long>
+            <h2>Championship standings</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Driver name</th>
+                  <th scope="col">Points before</th>
+                  <th scope="col">Points after</th>
+                  <th class="mobileoff" scope="col">Points gained</th>
+                  <th class="mobileoff" scope="col">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Overboosted</td>
+                  <td>0</td>
+                  <td>25</td>
+                  <td class="mobileoff">+25</td>
+                  <td class="mobileoff"></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mihael2017</td>
+                  <td>0</td>
+                  <td>18</td>
+                  <td class="mobileoff">+18</td>
+                  <td class="mobileoff"></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Kubix21</td>
+                  <td>0</td>
+                  <td>16</td>
+                  <td class="mobileoff">+16</td>
+                  <td class="mobileoff"></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>GaryHeffley</td>
+                  <td>0</td>
+                  <td>12</td>
+                  <td class="mobileoff">+12</td>
+                  <td class="mobileoff"></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>KwadratPL</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td class="mobileoff">+10</td>
+                  <td class="mobileoff"></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>IGO_pL</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td class="mobileoff">+4</td>
+                  <td class="mobileoff">Half points - participated with a second driver</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>___Marysia</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td class="mobileoff">+4</td>
+                  <td class="mobileoff">Half points - participated with a second driver</td>
+                </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <h2>Podium</h2>
+            <img id="podium" src="../media/f1cb_screens/podziemnagora_podium.png">
+        </long>
+        <short>
+            <h2>Race results</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Driver name</th>
+                  <th scope="col">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="first">
+                  <td>1</td>
+                  <td>Overboosted</td>
+                  <td>+25</td>
+                </tr>
+                <tr id="second">
+                  <td>2</td>
+                  <td>Mihael2017</td>
+                  <td>+18</td>
+                </tr>
+                <tr id="third">
+                  <td>3</td>
+                  <td>Kubix21</td>
+                  <td>+15</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>GaryHeffley</td>
+                  <td>+12</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>KwadratPL</td>
+                  <td>+10</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>IGO_pL & ___Marysia</td>
+                  <td>+8</td>
+                </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <h2>Qualifying</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Pos.</th>
+                  <th scope="col">Driver name</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Pts.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="second">
+                  <td>1</td>
+                  <td>Kubix21</td>
+                  <td>1:00.01</td>
+                  <td>+1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mihael2017</td>
+                  <td>1:01.36</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>KwadratPL</td>
+                  <td>1:02.65</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Overboosted</td>
+                  <td>1:02.95</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>GaryHeffley</td>
+                  <td>1:06.32</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>___Marysia</td>
+                  <td>1:27.72</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>IGO_pL</td>
+                  <td>1:55.24</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+            <p></p>
+            <h2>Circuit info</h2>
+            <h4>Podziemna Góra City Circuit</h4>
+            <img id="nobottommargin" src="../media/f1cb_tracks/podziemnagora.png">
+        </short>
+    </banner>
+
+    </main>
+
+    <footer class="show-footer" onclick="window.location.href = '#top'">
+        <h3>copyright Hansquare, 2023-2024.</h3>
+        <h3 class="written-on">event hosted on 27.08.2024</h3>
+        <p>back to top?</p>
+    </footer>
+
+</body>
+<style>
+    #first {
+      background-color: #d4af3786;
+    }
+    #second {
+      background-color: #c0c0c07a;
+    }
+    #third {
+      background-color: #85552681;
+    }
+    h3, h4 {
+      margin-top: 0;
+    }
+    img {
+      margin-bottom: 30px;
+      height: 150px;
+      width: 400px;
+      top: 0;
+      transition: all 0.15s;
+    }
+    img:hover {
+        transform: scale(0.95);
+    }
+    img:active {
+        transform: scale(0.9);
+    }
+    #nobottommargin {
+      margin-bottom: 3px;
+    }
+    #podium {
+        height: auto;
+        width: auto;
+        max-width: 500px;
+        border-radius: 10px;
+    }
+    @media (max-width: 800px) {
+        th, td {
+            padding: 10px;
+        }
+        long {
+            max-width: 400px;
+        }
+        .mobileoff {
+            display: none;
+        }
+    }
+    </style>
+</html>

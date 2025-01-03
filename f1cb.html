@@ -18,87 +18,152 @@
         </left>
         <right>
             <button onclick="window.location.href = 'blog.html'">blog</button>
+            <button onclick="window.location.href = 'f1cb.html'">formula citiesbuild</button>
             <button onclick="window.location.href = 'contact.html'">contact</button>
             <img src="media/hamburger.png" onclick="doAnimation()">
         </right>
     </header>
     <touch-menu>
         <button onclick="window.location.href = 'blog.html'">blog</button>
+        <button onclick="window.location.href = 'f1cb.html'">formula citiesbuild</button>
         <button onclick="window.location.href = 'contact.html'">contact</button>
     </touch-menu>
 
     <main>
     <simple-banner style="background-image: url('media/f1cb.png');">
         <darker>
-            <h1>F1CB Championship</h1>
+            <h1>Formula CitiesBuild</h1>
             <h2>
                 Formula-styled boat racing championship happening all over CitiesBuild.
             </h2>
         </darker>
     </simple-banner>
 
-    <div class="container article-container">
-        <h2>Championship standings</h2>
-        <p>
+    <banner>
+        <short>
+            <h2>Championship standings</h2>
             <table>
-                <thead>
-                  <tr>
-                    <th scope="col">Position</th>
-                    <th scope="col">Driver name</th>
-                    <th scope="col">Points</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Overboosted</td>
-                    <td>69</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>KwadratPL</td>
-                    <td>51</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Kubix21</td>
-                    <td>36</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Mihael2017</td>
-                    <td>36</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>GaryHeffley</td>
-                    <td>35</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>alvarhe</td>
-                    <td>24</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>FeyTwo</td>
-                    <td>8</td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>IGO_pL</td>
-                    <td>4</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>___Marysia</td>
-                    <td>4</td>
-                  </tr>
-                </tbody>
-              </table>
-              
-        </p>
-    </div>
+              <thead>
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Driver name</th>
+                  <th scope="col">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Overboosted</td>
+                  <td>69</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>KwadratPL</td>
+                  <td>51</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Kubix21</td>
+                  <td>36</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Mihael2017</td>
+                  <td>36</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>GaryHeffley</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>alvarhe</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>FeyTwo</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>IGO_pL</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>___Marysia</td>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+        </short>
+        <short>
+            <h2>Last race results</h2>
+            <h3>5th Anniversary Grand Prix</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Position</th>
+                  <th scope="col">Driver name</th>
+                  <th scope="col">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="first">
+                  <td>1</td>
+                  <td>Overboosted</td>
+                  <td>+25</td>
+                </tr>
+                <tr id="second">
+                  <td>2</td>
+                  <td>Mihael2017</td>
+                  <td>+18</td>
+                </tr>
+                <tr id="third">
+                  <td>3</td>
+                  <td>KwadratPL</td>
+                  <td>+16</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>alvarhe</td>
+                  <td>+12</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Kubix21</td>
+                  <td>+10</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>GaryHeffley</td>
+                  <td>+8</td>
+                </tr>
+              </tbody>
+            </table>
+        </short>
+        <short>
+            <h2>Last race</h2>
+            <h3 id="nobottommargin">Round 3</h3>
+            <h4 id="nobottommargin">Klasogród Historic Circuit</h4>
+            <img onclick="window.location.href = 'f1cb_blog/5thanniversary.html'" id="nobottommargin" src="media/f1cb_tracks/klasogrod_5thanniversary.png">
+            <button-area>
+              <button onclick="window.location.href = 'https://github.com/wiktorkonopka/nanoshell'">watch replay</button>
+              <button onclick="window.location.href = 'f1cb_blog/5thanniversary.html'">results</button>
+            </button-area>
+
+            <h3 id="nobottommargin">Round 2</h3>
+            <h4 id="nobottommargin">Miedzianiec</h4>
+            <img onclick="window.location.href = 'f1cb_blog/miedzianiec.html'" src="media/f1cb_tracks/miedzianiec.png">
+
+            <h3 id="nobottommargin">Round 1</h3>
+            <h4 id="nobottommargin">Podziemna Góra</h4>
+            <img onclick="window.location.href = 'f1cb_blog/podziemnagora.html'" src="media/f1cb_tracks/podziemnagora.png">
+        </short>
+    </banner>
+
     </main>
 
     <footer onclick="window.location.href = '#top'">
@@ -107,4 +172,34 @@
     </footer>
 
 </body>
+<style>
+#first {
+  background-color: #d4af3786;
+}
+#second {
+  background-color: #c0c0c07a;
+}
+#third {
+  background-color: #85552681;
+}
+h3, h4 {
+  margin-top: 0;
+}
+img {
+  margin-bottom: 30px;
+  height: 150px;
+  width: 400px;
+  top: 0;
+  transition: all 0.15s;
+}
+img:hover {
+    transform: scale(0.95);
+}
+img:active {
+    transform: scale(0.9);
+}
+#nobottommargin {
+  margin-bottom: 3px;
+}
+</style>
 </html>
