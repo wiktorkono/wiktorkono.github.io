@@ -489,3 +489,12 @@ button-area > button:hover {
 button-area > button:active {
     top: 0px;
 }
+
+/* TABLE */
+
+th, tr, td {
+    padding: 20px;
+    border: 1px solid var(--4);
+    margin: 0;
+    outline: 0;
+}
